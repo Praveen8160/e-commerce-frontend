@@ -37,13 +37,13 @@ function Header() {
               <>
                 <Link
                   to="/SignIn"
-                  className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                  className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 lg:px-5 py-1 lg:py-2.5 mr-2 focus:outline-none"
                 >
                   Sign in
                 </Link>
                 <Link
                   to="/SignUp"
-                  className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                  className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 lg:px-5 py-1 lg:py-2.5 mr-2 focus:outline-none"
                 >
                   Sign Up
                 </Link>
