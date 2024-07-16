@@ -17,9 +17,12 @@ function Home() {
   useEffect(() => {
     const fetchcategory = async () => {
       try {
-        const res = await axios.get(
-          "https://e-commerce-backend-il2s.onrender.com/product/getAllProductCategories"
-        );
+        const apiUrl =
+          process.env.NODE_ENV === "production"
+            ? "https://e-commerce-backend-il2s.onrender.com/product/getAllProductCategories"
+            : "https://e-commerce-backend-il2s.onrender.com/product/getAllProductCategories";
+
+        const res = await axios.get(apiUrl);
         const response = res.data;
         setCategories(response);
         setloader(true);
