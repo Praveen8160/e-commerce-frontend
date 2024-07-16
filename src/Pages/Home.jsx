@@ -26,7 +26,9 @@ function Home() {
         const response = res.data;
         setCategories(response);
         setloader(true);
-      } catch (error) {}
+      } catch (error) {
+        console.log("object")
+      }
     };
     fetchcategory();
   }, []);
