@@ -11,9 +11,12 @@ function MyOrder() {
 
   useEffect(() => {
     const fetchAllOrder = async () => {
-      const response = await axios.get("https://e-commerce-backend-il2s.onrender.com/order/myOrder", {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        "https://e-commerce-backend-il2s.onrender.com/order/myOrder",
+        {
+          withCredentials: true,
+        }
+      );
       const res = response.data;
       setOrder(res.allOrders);
     };
@@ -59,7 +62,7 @@ function MyOrder() {
             <img
               src="https://img.freepik.com/premium-vector/shopping-carts-discount-vouchers-purchases-special-discount-notification-3d-illustration_68708-4036.jpg?size=626&ext=jpg&ga=GA1.1.1719067875.1720498573&semt=sph"
               alt=""
-              className="h-72 rounded-full m-10"
+              className="lg:h-72 rounded-full lg:w-auto w-40 h-52 m-10"
             />
           </div>
           <div className="text-center">
