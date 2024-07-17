@@ -40,7 +40,7 @@ function ProductView() {
 
   return (
     <>
-      {product ? (
+      {product.length != 0 ? (
         <div className="container shadow-xl">
           <div className="flex flex-col justify-center items-center">
             <img
