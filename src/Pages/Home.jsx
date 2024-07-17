@@ -27,7 +27,7 @@ function Home() {
         setCategories(response);
         setloader(true);
       } catch (error) {
-        console.log("object")
+        console.log("error",error)
       }
     };
     fetchcategory();
@@ -62,7 +62,7 @@ function Home() {
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search products..."
+              placeholder="Search products Categories..."
               className="w-full px-4 py-2 border border-gray-300 rounded-md"
             />
           </div>
