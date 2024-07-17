@@ -51,15 +51,15 @@ function Cart() {
           key,
           amount: res.order.amount,
           currency: "INR",
-          name: "Food Delivery",
+          name: "E-Commerce",
           description: "Total payment",
-          image: "https://example.com/your_logo",
+          image: "https://tse1.mm.bing.net/th?id=OIP.Bzz7HKbT66HZ3ql6AZE8eAHaHa&pid=Api&P=0&h=180",
           order_id: res.order.id,
           callback_url:
             "https://e-commerce-backend-il2s.onrender.com/payment/paymentverify",
           prefill: {
-            name: "Gaurav Kumar",
-            email: "gaurav.kumar@example.com",
+            name: "Praveen",
+            email: "Praveen@gmail.com",
             contact: "9000090000",
           },
           notes: {
