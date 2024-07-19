@@ -53,7 +53,8 @@ function Cart() {
           currency: "INR",
           name: "E-Commerce",
           description: "Total payment",
-          image: "https://tse1.mm.bing.net/th?id=OIP.Bzz7HKbT66HZ3ql6AZE8eAHaHa&pid=Api&P=0&h=180",
+          image:
+            "https://tse1.mm.bing.net/th?id=OIP.Bzz7HKbT66HZ3ql6AZE8eAHaHa&pid=Api&P=0&h=180",
           order_id: res.order.id,
           callback_url:
             "https://e-commerce-backend-il2s.onrender.com/payment/paymentverify",
@@ -159,7 +160,7 @@ function Cart() {
               <hr className="w-full border-t-2 border-gray-300 my-2" />
               <h1 className="text-xl font-semibold flex justify-between w-full">
                 <span>Total Amount:</span>
-                <span>₹{(totalprice + 50).toFixed(2)}</span>
+                <span>₹{totalprice.toFixed(2)}</span>
               </h1>
             </div>
           </div>
