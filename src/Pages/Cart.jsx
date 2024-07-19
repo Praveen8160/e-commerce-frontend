@@ -149,17 +149,17 @@ function Cart() {
               <div className="w-full">
                 <h1 className="text-xl font-semibold flex justify-between w-full">
                   <span>Total Price:</span>
-                  <span>${totalprice}</span>
+                  <span>₹{totalprice}</span>
                 </h1>
                 <h1 className="text-xl font-semibold flex justify-between w-full mt-2">
                   <span>Delivery:</span>
-                  <span>$50</span>
+                  <span>Free</span>
                 </h1>
               </div>
               <hr className="w-full border-t-2 border-gray-300 my-2" />
               <h1 className="text-xl font-semibold flex justify-between w-full">
                 <span>Total Amount:</span>
-                <span>${(totalprice + 50).toFixed(2)}</span>
+                <span>₹{(totalprice + 50).toFixed(2)}</span>
               </h1>
             </div>
           </div>

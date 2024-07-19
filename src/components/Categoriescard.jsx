@@ -6,7 +6,7 @@ export default function Categoriescard({ product }) {
       <Link to={`/products/${product._id}`}>
         <img
           src={product.image}
-          alt={product.name}
+          alt={product.name.toupperCase()}
           className="w-full h-48 object-cover"
         />
         <div className="p-4">
